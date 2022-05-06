@@ -1,12 +1,131 @@
-.appfooter__link--poweredby {display: none}
+.appfooter__link--poweredby,
+.herovideo__controls {
+    display: none
+}
 
 .hero-header-container {
     position: absolute;
+    width: 100%;
     height: 100%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-.hero-header-inner {
+.hero-header-outer {
+    margin: 0 auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    color: white;
+    max-width: 1100px;
 }
+
+.hero-header-subtitle {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero-header-statement {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.hero-header-copy {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+
+.hero-header-button {
+    margin-top: calc(20px + 1rem);
+}
+
+.hero-header-button a {
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #00b1a4;
+    border: 2px solid #00b1a4;
+    border-radius: 40px;
+    padding: 1rem 1.2rem;
+}
+
+.hero-header-button a:hover {
+    background-color: #00b1a4;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-header-inner {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-header-subtitle {
+        font-size: 0.8rem;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    .hero-header-statement {
+        font-size: 1.6rem;
+        line-height: 1;
+        margin: 5px 0;
+    }
+    .hero-header-copy {
+        font-size: 1rem;
+        line-height: 1;
+        margin: 5px 0;
+    }
+    .hero-header-button {
+        margin-top: calc(10px + 0.5rem);
+    }
+    .hero-header-button a {
+        font-size: 0.5rem;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-header-subtitle {
+        font-size: 0.5rem;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    .hero-header-statement {
+        font-size: 1.2rem;
+        line-height: 1;
+        margin: 5px 0;
+    }
+    .hero-header-copy {
+        font-size: 0.6rem;
+        line-height: 1;
+        margin: 5px 0;
+    }
+    .hero-header-button {
+        margin-top: calc(10px + 0.5rem);
+    }
+    .hero-header-button a {
+        font-size: 0.5rem;
+        padding: 0.3rem;
+    }
+}
+
+
+/*
+@font-face {
+    font-family: 'NB International Regular';
+    src: url(https://kinesso.com/wp-content/uploads/2021/07/NB-International-Regular-Webfont.ttf);
+  }
+
+@font-face {
+    font-family: 'NB International Bold';
+    src: url(https://kinesso.com/wp-content/uploads/2021/07/NB-International-Bold-Webfont.ttf);
+  }
+*/
