@@ -22,37 +22,35 @@
 }
 
 .hero-header-subtitle {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-bottom: 10px;
+    display: none;
 }
 
 .hero-header-statement {
-    font-size: 3rem;
     font-weight: 700;
-    line-height: 1;
-    margin: 5px 0;
+    font-size: clamp(1.5rem, 1.5rem, 2.5rem);
+    line-height: clamp(1, 1, 1.2);
+    margin-bottom: clamp(8px, 10px, 12px);
 }
 
 .hero-header-copy {
-    font-size: 1.2rem;
-    line-height: 1.2;
-    margin: 5px 0;
+    font-size: clamp(0.8rem, 0.8rem, 1.2rem);
+    line-height: clamp(1, 1.2, 1.2);
+    margin-bottom: clamp(8px, 8px, 10px);
 }
 
 .hero-header-button {
-    margin-top: calc(20px + 1rem);
+    margin-top: clamp(0.6rem, 0.6rem, 1rem);
 }
 
 .hero-header-button a {
     transition: all 0.3s;
     text-transform: uppercase;
-    font-size: 1.2rem;
     color: #00b1a4;
     border: 2px solid #00b1a4;
     border-radius: 40px;
-    padding: 1rem 1.2rem;
+    font-size: clamp(0.7rem, 0.7rem, 1rem);
+    line-height: 1;
+    padding: clamp(0.4rem, 0.4rem, 1rem);
 }
 
 .hero-header-button a:hover {
@@ -62,58 +60,36 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .hero-header-subtitle {
+        display: block;
+        text-transform: uppercase;
+        font-size: clamp(1rem, 1rem, 1.5rem);
+        line-height: clamp(1, 1.2, 1.5);
+        margin-bottom: clamp(8px, 10px, 12px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
     .hero-header-inner {
         max-width: 50%;
     }
-}
-
-@media only screen and (max-width: 991px) {
-    .hero-header-subtitle {
-        font-size: 0.8rem;
-        line-height: 1;
-        margin-bottom: 5px;
-    }
     .hero-header-statement {
-        font-size: 1.6rem;
-        line-height: 1;
-        margin: 5px 0;
+        font-size: clamp(2rem, 2.5rem, 4rem);
+        line-height: clamp(1, 1.2, 1.5);
+        margin-bottom: clamp(10px, 12px, 15px);
     }
     .hero-header-copy {
-        font-size: 1rem;
-        line-height: 1;
-        margin: 5px 0;
+        font-size: clamp(1rem, 1rem, 1.5rem);
+        line-height: clamp(1, 1.2, 1.5);
+        margin-bottom: clamp(10px, 12px, 15px);
     }
     .hero-header-button {
-        margin-top: calc(10px + 0.5rem);
+        margin-top: clamp(1rem, 2rem, 3rem);
     }
     .hero-header-button a {
-        font-size: 0.5rem;
-        padding: 0.5rem;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .hero-header-subtitle {
-        font-size: 0.5rem;
+        font-size: clamp(1rem, 1rem, 1.5rem);
         line-height: 1;
-        margin-bottom: 5px;
-    }
-    .hero-header-statement {
-        font-size: 1.2rem;
-        line-height: 1;
-        margin: 5px 0;
-    }
-    .hero-header-copy {
-        font-size: 0.6rem;
-        line-height: 1;
-        margin: 5px 0;
-    }
-    .hero-header-button {
-        margin-top: calc(10px + 0.5rem);
-    }
-    .hero-header-button a {
-        font-size: 0.5rem;
-        padding: 0.3rem;
+        padding: clamp(0.5rem, 0.8rem, 1rem);
     }
 }
 
